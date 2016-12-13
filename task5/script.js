@@ -18,10 +18,8 @@ function d(number){
 }
 // e(55)() => 55, e(123)() => 123, typeof a() => number
 function e(x) {
-	return function 
-	{
-		return x;
-	}
+  return function()
+  {return x};
 }
 // f(1,3) => [1,1,1], b('x',5) => ['x','x','x','x','x'], b(-1,2) => [-1,-1], typeof a() => object (array)
 function f(x,y)
@@ -63,24 +61,22 @@ function k(obj = {}){
 
 
 // m([1,2,3],[55,12,33]) => [56,14,36], m([2,3],[5,-1]) => [7,2], typeof a() => object (array)
-function(arrayone =[], arrayonetwo = [])
-	var arraysum = [];
-	{
-	for (var i=0; i < array.length; i++){
-		arraysum[i] = arrayone [i] + arrayonetwo[i]
-	}
-	return arraysum;
+function arr(arrayone =[], arraytwo=[]) {
+  var sumarray = [];
+  for (var i =0; i < arrayone.length; i++) {
+    sumarray[i] = arrayone[i] + arraytwo[i];
+  }
+  return sumarray;
 }
 
 
 // n(1)(2)(3) => 6, n(5)(25)(8) => 38, n(3)(-5)(0) => -2, typeof a() => number
 
-function n(x){
-	function (y){
-		function (z)
-		{
-			return x+y+z;
-		}
-	}
-
+function xyz(x) {
+  return function(y) {
+    return function(z) {
+      return x + y + z;
+    }
+  }
 }
+

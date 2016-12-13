@@ -1,4 +1,8 @@
-newgame();
+wanna = confirm('Do you wont play?')
+if (!wanna) {
+        console.log("You were so close");
+    }
+
 
 function newgame() {
 

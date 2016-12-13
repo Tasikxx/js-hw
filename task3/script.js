@@ -1,5 +1,5 @@
-var ryadok = '';
+var s = '';
 for (var i = 0; i < 10; i++) {
-    ryadok= ryadok + '#';
-    console.log(ryadok);
+    s= s + '#';
+    console.log(s);
 }

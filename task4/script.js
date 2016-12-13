@@ -1,18 +1,18 @@
 var counter = 0;
 while (counter <= 6) {
-    var ryadok = '';
+    var line = '';
     var a= ' ';
     var b= '#'
     if (counter % 2 == 0) {
-        while (ryadok.length <= 8) {
-            ryadok = ryadok + b + a;
+        while (line.length <= 8) {
+            line = line + b + a;
         }
     } else {
-        while (ryadok.length <= 8) {
-            ryadok = ryadok + a + b;
+        while (line.length <= 8) {
+            line = line + a + b;
         }
     }
-    console.log(ryadok);
+    console.log(line);
     counter++;
 }
 
