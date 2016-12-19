@@ -5,10 +5,6 @@ function play() {
 	if (start) {
 		attempt1();
 	}
-	if (sum>2){
-		nextgame();
-		attempt1();
-	}
 	else {
 		console.log('Today you will not win the jackpot, but you could');
 	}

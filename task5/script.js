@@ -53,10 +53,13 @@ function j(array=[]) {
 // k({a:1,b:2,c:3}) => 6, k({n:55,s:82}) => 137, typeof a() => number
 function k(obj = {}){
 	var sum = 0;
-		for (var key in obj){
-			sum = sum + obj[key]
-		}
+	for (var key in obj){
+		sum += obj[key]
+	}
+	return sum;
 }
+
+
 
 
 
